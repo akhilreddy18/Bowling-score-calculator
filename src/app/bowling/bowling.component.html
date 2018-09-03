@@ -1,0 +1,7 @@
+<div>
+  roll1 <input type="text" #roll1/>
+  roll2 <input type="text" #roll2/>
+  <input  type="button" value="Hit me" (click)="addThrow(roll1.value,roll2.value)"/>
+  <br>
+  Total score is : {{ totalScore }}
+  </div>
