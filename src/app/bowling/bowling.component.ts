@@ -24,6 +24,8 @@ export class BowlingComponent implements OnInit {
      this.throws.push(this.throw);
       this.getScore();
       console.log(this.throws.length)
+
+      if(this.throws.length <= 10){
   
       if (Number(this.throw['first']) == 10) {
           console.log("inside spike")
@@ -34,6 +36,7 @@ export class BowlingComponent implements OnInit {
       } else {
         console.log("inside open")
           this.totalScore += this.getOpenScore();
+      }
       }
   }
 
